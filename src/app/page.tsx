@@ -53,7 +53,7 @@ export default function HomePage() {
         <section className="border-b border-blue-100 bg-gradient-to-b from-blue-50/80 to-gray-50">
           <div className="mx-auto max-w-5xl px-4 py-16 text-center sm:py-20">
             <p className="mb-4 text-sm font-medium tracking-wide text-blue-600">
-              {siteConfig.domain}
+              한글로 돌고래.com · ehfrhfo.com
             </p>
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               한국 세금·급여 계산 도구
@@ -207,17 +207,13 @@ export default function HomePage() {
               <p className="text-gray-400">├── pay.ehfrhfo.com &nbsp; 시급·연봉</p>
               <p className="text-gray-400">└── ehfrhfo.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 허브 (지금 여기)</p>
             </div>
+            <p className="mt-6 text-lg font-medium text-white">
+              {domainStory.subline}
+            </p>
             <div className="mt-8 space-y-4 text-sm leading-relaxed text-gray-300">
               {domainStory.paragraphs.map((p) => (
                 <p key={p}>{p}</p>
               ))}
-            </div>
-            <div className="mt-8 rounded-xl border border-gray-700 bg-gray-800 p-5">
-              <p className="text-xs font-medium uppercase tracking-wide text-gray-500">
-                기억법 · E-H-F-R-H-F-O
-              </p>
-              <p className="mt-2 text-sm text-gray-300">{domainStory.mnemonic}</p>
-              <p className="mt-1 text-xs text-gray-500">{domainStory.mnemonicKo}</p>
             </div>
           </div>
         </section>

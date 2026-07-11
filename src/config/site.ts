@@ -11,13 +11,12 @@ export const siteConfig = {
 } as const;
 
 export const domainStory = {
-  headline: "ehfrhfo.com = 돌고래",
-  mnemonic: "Earn · Handle · Finance · Real · Hand · For · Outcome",
-  mnemonicKo: "정직하게(Earn) · 다루다(Handle) · 금융(Finance) · 실제(Real) · 손(Han)d · 위해(For) · 결과(Outcome)",
+  headline: "한글로 돌고래.com 치시면 언제라도 올 수 있습니다!",
+  subline: "주소는 ehfrhfo.com · 브랜드는 돌고래",
   paragraphs: [
-    "ehfrhfo.com은 우리 서비스의 집 주소입니다. 브랜드 이름은 돌고래 — 복잡한 세금·급여 계산을 빠르고 정확하게 헤쳐 나간다는 뜻입니다.",
-    "tax.ehfrhfo.com은 세금·4대보험, pay.ehfrhfo.com은 시급·연봉을 담당합니다. ehfrhfo.com(루트)은 두 도구를 연결하는 허브입니다.",
-    "기억법: 돌고래가 사는 바다 = ehfrhfo.com. 세금은 tax, 급여는 pay.",
+    "ehfrhfo.com이 우리 집 주소입니다. 이름만 기억하세요 — 돌고래.",
+    "세금·4대보험은 tax.ehfrhfo.com, 시급·연봉은 pay.ehfrhfo.com입니다.",
+    "ehfrhfo.com(지금 이 페이지)에서 두 계산기로 바로 갈 수 있습니다.",
   ],
 } as const;
 
@@ -95,7 +94,7 @@ export const faq = [
   {
     question: "ehfrhfo.com이 뭔가요?",
     answer:
-      "ehfrhfo.com은 돌고래 브랜드의 메인 도메인입니다. tax(세금)와 pay(급여) 계산기를 연결하는 허브이며, 복잡한 금융 계산을 빠르게 해결한다는 돌고래 컨셉을 담았습니다.",
+      "돌고래 브랜드의 메인 주소입니다. 한글로 돌고래.com 치시면 언제라도 올 수 있습니다 — 실제 주소는 ehfrhfo.com이고, 세금은 tax, 급여는 pay 서브도메인을 이용하세요.",
   },
   {
     question: "계산기는 무료인가요?",
