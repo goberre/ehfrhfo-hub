@@ -1,4 +1,4 @@
-import { siteConfig, tools } from "@/config/site";
+import { faq, siteConfig, tools } from "@/config/site";
 
 export default function JsonLd() {
   const data = {
@@ -19,6 +19,14 @@ export default function JsonLd() {
         name: siteConfig.brand,
         url: siteConfig.url,
         logo: `${siteConfig.url}/favicon.svg`,
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faq.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
+        })),
       },
       ...tools.map((tool) => ({
         "@type": "WebApplication",

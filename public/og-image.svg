@@ -8,10 +8,10 @@
       <path d="M5.5 19.2c-.9-4.6 3.2-8.8 8.6-9.4 2.4-.3 4.5-1.7 5.6-3.8 1.2 3 .1 6.4-2.6 8.1-2.4 1.5-5.6 1.6-8.1.3-1.4-.7-2.6.4-3.1 1.6-.7 1.7-2.1 3-3.7 3.2-1.1.1-1.6-.9-1.3-2.4l-.4.4z"/>
       <path d="M13.1 9.8 15.9 6 17.4 10.2z"/>
     </g>
-    <text x="76" y="38" fill="#111827" font-family="system-ui,-apple-system,sans-serif" font-size="28" font-weight="600" letter-spacing="-0.02em">Ìà˜</text>
+    <text x="76" y="38" fill="#111827" font-family="system-ui,-apple-system,sans-serif" font-size="28" font-weight="600" letter-spacing="-0.02em">Dolphin</text>
   </g>
 
-  <text x="140" y="280" fill="#111827" font-family="system-ui,-apple-system,sans-serif" font-size="52" font-weight="700" letter-spacing="-0.03em">\m 8·	ì Ä° Äl</text>
-  <text x="140" y="340" fill="#6B7280" font-family="system-ui,-apple-system,sans-serif" font-size="28" letter-spacing="-0.01em">tax.ehfrhfo.com · pay.ehfrhfo.com</text>
-  <text x="140" y="420" fill="#9CA3AF" font-family="system-ui,-apple-system,sans-serif" font-size="22">ehfrhfo.com</text>
+  <text x="140" y="280" fill="#111827" font-family="system-ui,-apple-system,sans-serif" font-size="48" font-weight="700" letter-spacing="-0.03em">Tax and Pay Calculators</text>
+  <text x="140" y="340" fill="#6B7280" font-family="system-ui,-apple-system,sans-serif" font-size="26" letter-spacing="-0.01em">ehfrhfo.com · tax · pay</text>
+  <text x="140" y="400" fill="#9CA3AF" font-family="system-ui,-apple-system,sans-serif" font-size="22">2026 rates · Free · ehfrhfo.com</text>
 </svg>
