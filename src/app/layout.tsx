@@ -62,7 +62,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
-      <body className="bg-gray-50 text-gray-900 antialiased">
+      <body className="bg-[#060b14] text-white antialiased">
         <JsonLd />
         {children}
       </body>
