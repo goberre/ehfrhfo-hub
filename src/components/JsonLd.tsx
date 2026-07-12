@@ -3,6 +3,7 @@ import { siteConfig, tools } from "@/config/site";
 
 const TAX_URL = "https://tax.ehfrhfo.com";
 const PAY_URL = "https://pay.ehfrhfo.com";
+const NAME_URL = "https://name.ehfrhfo.com";
 
 export default function JsonLd() {
   const data = {
@@ -14,7 +15,7 @@ export default function JsonLd() {
         name: siteConfig.brand,
         url: siteConfig.url,
         logo: `${siteConfig.url}/favicon.svg`,
-        sameAs: [siteConfig.url, TAX_URL, PAY_URL],
+        sameAs: [siteConfig.url, TAX_URL, PAY_URL, NAME_URL],
       },
       {
         "@type": "WebSite",

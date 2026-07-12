@@ -27,4 +27,12 @@ export const tools = [
     gradient: "from-cyan-500 to-blue-600",
     glow: "shadow-cyan-500/25",
   },
+  {
+    href: "https://name.ehfrhfo.com",
+    name: "이름 풀이",
+    subtitle: "name.ehfrhfo.com",
+    description: "이름으로 오행·성격·연애·재물·직업운",
+    gradient: "from-violet-600 to-purple-800",
+    glow: "shadow-violet-500/25",
+  },
 ] as const;

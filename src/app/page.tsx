@@ -25,7 +25,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-md text-base text-white/50">
-            세금 · 4대보험 · 시급 · 연봉
+            세금 · 4대보험 · 시급 · 연봉 · 이름 풀이
             <br />
             무료 · 회원가입 없음
           </p>
@@ -38,7 +38,7 @@ export default function HomePage() {
 
       {/* Tools */}
       <section className="relative bg-[#060b14] px-5 pb-24 pt-4">
-        <div className="mx-auto grid max-w-4xl gap-5 sm:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {tools.map((tool) => (
             <a
               key={tool.href}
@@ -83,7 +83,7 @@ export default function HomePage() {
         <p className="mx-auto mt-16 max-w-sm text-center text-xs leading-relaxed text-white/30">
           주소 {siteConfig.domain}
           <br />
-          세금 tax · 급여 pay
+          세금 tax · 급여 pay · 이름 name
         </p>
       </section>
 
