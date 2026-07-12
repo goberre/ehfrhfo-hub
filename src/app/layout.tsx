@@ -1,56 +1,62 @@
 import type { Metadata, Viewport } from "next";
 import JsonLd from "@/components/JsonLd";
+import { seoConfig } from "@/config/seo";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#2563EB",
+  themeColor: "#060b14",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: siteConfig.name,
+    default: seoConfig.title,
     template: `%s | ${siteConfig.brand}`,
   },
-  description: siteConfig.description,
-  keywords: [
-    "세금 계산기",
-    "4대보험 계산기",
-    "시급 계산기",
-    "연봉 계산기",
-    "실수령액 계산",
-    "돌고래",
-    "ehfrhfo",
-  ],
-  robots: { index: true, follow: true },
+  description: seoConfig.description,
+  keywords: [...seoConfig.keywords],
+  authors: [{ name: siteConfig.brand }],
+  creator: siteConfig.brand,
+  publisher: siteConfig.brand,
+  category: "finance",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "/",
     languages: { "ko-KR": "/" },
   },
   openGraph: {
     type: "website",
-    locale: siteConfig.locale,
+    locale: seoConfig.locale,
     url: siteConfig.url,
     siteName: siteConfig.brand,
-    title: siteConfig.name,
-    description: siteConfig.description,
+    title: seoConfig.title,
+    description: seoConfig.description,
     images: [
       {
-        url: siteConfig.ogImage,
+        url: seoConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: siteConfig.name,
+        alt: seoConfig.title,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [siteConfig.ogImage],
+    title: seoConfig.title,
+    description: seoConfig.description,
+    images: [seoConfig.ogImage],
   },
 };
 
@@ -61,6 +67,7 @@ export default function RootLayout({
     <html lang="ko">
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="canonical" href={siteConfig.url} />
       </head>
       <body className="bg-[#060b14] text-white antialiased">
         <JsonLd />

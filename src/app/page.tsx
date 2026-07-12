@@ -1,6 +1,7 @@
 import BrandLockup from "@/components/BrandLockup";
 import HubFooter from "@/components/HubFooter";
 import LastUpdated from "@/components/LastUpdated";
+import SeoHiddenContent from "@/components/SeoHiddenContent";
 import { siteConfig, tools } from "@/config/site";
 
 export default function HomePage() {
@@ -86,6 +87,7 @@ export default function HomePage() {
         </p>
       </section>
 
+      <SeoHiddenContent />
       <HubFooter />
     </div>
   );
